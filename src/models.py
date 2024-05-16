@@ -67,7 +67,7 @@ class FavoritePeople(db.Model):
             "user": User.query.get(self.user_id).serialize(),
             "people": People.query.get(self.people_id).serialize()
         }
-#recomendacion separar los favoritos en tablas distintas
+
 # new_favorite = FavoritePeople(user_id = db.Column....., )
 # new_favorite.user -> obtengo toda la info del usuario q tiene a ese favorito en su lista y tmb obtengo sus metodos (serialize)
 
